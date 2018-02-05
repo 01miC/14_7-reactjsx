@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100vw;
+  height: 100vh;
+  flex: 1;
+}
+
+body {
+  background: url(./bin/img/bgbg.jpeg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  background-color: rgba(255, 255, 255, 0.7);
+  flex: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.app {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.app .contactForm {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app .contactForm input {
+  border: 0;
+  background: none;
+  height: 50px;
+  border-bottom: 1px #575757 solid;
+  padding: 10px 0;
+  margin: 5px 5px;
+}
+
+.app .contactForm input::-webkit-input-placeholder:active, .app .contactForm input::-webkit-input-placeholder:focus {
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.app .contactForm > :nth-child(1), .app .contactForm > :nth-child(2) {
+  flex: 1;
+}
+
+.app .contactForm > :nth-child(3) {
+  flex: 60%;
+}
+
+.app .contactForm > :last-child {
+  flex: 30%;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  border: 2px #fff solid;
+  transition: all 0.2s ease-in-out;
+}
+
+.app .contactForm > :last-child:hover {
+  color: #00f094;
+  border: 2px #00ff9d solid;
+}
+
+.app .contactsList {
+  padding: 0;
+  flex-direction: column;
+}
+
+.app .contactsList .contactItem {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2px 0;
+  padding: 15px 0 15px 20px;
+}
+
+.app .contactsList .contactItem:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.app .contactsList .contactItem .contactImage {
+  float: left;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.app .contactsList .contactItem .contactLabel {
+  padding-top: 5px;
+}
+
+.app .contactsList .contactItem .contactEmail {
+  text-decoration: none;
+  color: #575757;
+  padding-top: 20px;
+  font-size: 0.8em;
+  flex-direction: row;
+}
